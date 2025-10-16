@@ -1,19 +1,46 @@
 # analise-vendas-notebook
+## Introdução
 
-**Quais fatores afetam os preços dos laptops?**
+O preço de um laptop pode variar significativamente entre marcas e modelos, sendo influenciado por fatores como especificações técnicas, softwares inclusos e até o design do produto. Este projeto tem como propósito investigar quais variáveis exercem maior influência sobre o preço dos laptops, utilizando dados reais coletados de um site de e-commerce.
 
-- Diversos fatores podem afetar o preço de um laptop. Entre eles, estão a marca do computador e o número de opcionais e complementos incluídos no pacote. Além disso, a quantidade de memória e a velocidade do processador também podem afetar o preço. Embora menos comum, alguns consumidores gastam mais dinheiro para comprar um computador com base na "aparência" geral e no design do sistema.
+## Objetivo
+O objetivo deste projeto é identificar os principais fatores que impactam o preço dos laptops.
+A análise busca responder perguntas como:
 
-- Em muitos casos, computadores de marca são mais caros do que as versões genéricas. Esse aumento de preço geralmente tem mais a ver com o reconhecimento da marca do que com a superioridade real do produto. Uma grande diferença entre sistemas de marca e genéricos é que, na maioria dos casos, os computadores de marca oferecem garantias melhores do que as versões genéricas. Ter a opção de devolver um computador com defeito costuma ser um incentivo suficiente para incentivar muitos consumidores a gastar mais. A funcionalidade é um fator importante na determinação do preço de um laptop. Um computador com mais memória geralmente tem um desempenho melhor e por mais tempo do que um com menos memória. Além disso, o espaço em disco rígido também é crucial, e o tamanho do disco rígido geralmente afeta o preço. Muitos consumidores também podem procurar drivers de vídeo digital e outros tipos de dispositivos de gravação que podem afetar o preço do laptop.
+A marca realmente influencia o preço?
+Especificações técnicas como memória RAM, processador e armazenamento têm peso maior?
+O número de softwares pré-instalados e acessórios também afeta o valor final?
 
-- A maioria dos computadores vem com algum software pré-instalado. Na maioria dos casos, quanto mais softwares estiverem instalados em um computador, mais caro ele será. Isso é especialmente verdadeiro se os programas instalados forem de editoras de software bem estabelecidas e reconhecidas. Aqueles que consideram comprar um novo laptop devem estar cientes de que muitos dos programas pré-instalados podem ser apenas versões de teste e expirarão dentro de um determinado período de tempo. Para manter os programas, um código precisará ser comprado e, em seguida, uma versão permanente do software poderá ser baixada.
+## Metodologia
 
-- Muitos consumidores que estão comprando um novo computador estão comprando um pacote completo. Além do próprio computador, esses sistemas geralmente incluem um monitor, teclado e mouse. Alguns pacotes podem até incluir uma impressora ou câmera digital. O número de extras incluídos em um pacote de computador geralmente afeta os preços dos laptops.
+Fonte dos dados: Flipkart.com
+Ferramenta de coleta: Instant Data Scraper (extensão do Chrome para extração automatizada de dados web, sem necessidade de codificação).
 
-- Alguns líderes do setor de fabricação de computadores fazem da oferta de computadores com design elegante e em uma variedade de cores um atrativo de vendas. Eles também podem oferecer designs de sistema incomuns ou contemporâneos. Embora isso seja menos importante para muitos consumidores, para aqueles que valorizam a "aparência", esse tipo de sistema pode valer o custo extra
+Etapas do processo:
+Coleta e exportação dos dados brutos.
+Limpeza e padronização do dataset (remoção de duplicatas, tratamento de nulos e inconsistências).
+Análise exploratória de dados (EDA) para identificar padrões e correlações.
+Criação de visualizações para interpretação dos resultados.
 
-**De onde obtive esses dados?**
+## Estrutura da Análise
 
-- Esses dados foram extraídos do flipkart.com
-- usou uma ferramenta de extensão da web automatizada do Chrome chamada Instant Data Scrapper
-- É altamente recomendável que você use esta bela ferramenta para obter dados de qualquer lugar na web. É muito fácil de usar e não requer conhecimento de codificação.
+Entendimento dos dados – verificação das variáveis disponíveis e suas categorias.
+Limpeza e preparação – tratamento de dados ausentes e conversão de tipos.
+Análise descritiva – resumo estatístico e distribuição dos preços.
+Correlação entre variáveis – identificação de fatores que mais afetam o preço.
+Visualizações – gráficos e dashboards para comunicar os insights.
+Conclusões e aprendizados – resumo dos fatores mais relevantes e implicações de mercado.
+
+## Visão Geral dos Dados
+O conjunto de dados contém informações sobre:
+-Marca
+-Memória RAM
+-Processador (velocidade e geração)
+-Capacidade de armazenamento
+-Softwares pré-instalados
+-Acessórios incluídos no pacote
+-Design e aparência do laptop
+
+A análise demonstrou que marca, memória RAM e processador são os principais fatores associados a preços mais altos, seguidos por armazenamento e quantidade de softwares instalados.
+
+Analise Descritiva
